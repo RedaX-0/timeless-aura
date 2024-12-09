@@ -1,25 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'poppins' , sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 body{
-    background-color: rgb(25, 24, 24);
+    background: linear-gradient(135deg, #8a6148, #1C1C1C);
+
 }
+#Home{
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+}
+/*coooooooooooooooooooooooooooooooooooooooooooooo
 .hero {
     display: grid;
     place-items: center; /* Centers content vertically and horizontally */
-    grid-template-columns: 1fr auto; /* This ensures the images are on the right */
-    width: 100%;
+   /* grid-template-columns: 1fr auto; /* This ensures the images are on the right */
+   /* width: 50%;
     height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Hide any overflow */
-  }
+   /* overflow: hidden; /* Hide any overflow */
+ /* }
   
-  .hero-image {
-    width: 80%; /* Adjust image width */
-    height: auto;
+  /*.hero-image {
+    width: 60%; /* Adjust image width */
+   /* height: auto;
     margin-right: 50px;
     grid-column: 2; /* Place images in the second column (right) */
-    transition: opacity 2s ease-in-out;
+   /* transition: opacity 2s ease-in-out;
   }
+oooooooooooooooooooooooooooooooooooooooooooooooo*/
   

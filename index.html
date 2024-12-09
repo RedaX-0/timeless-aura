@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeless Aura</title>
+    <link rel="icon" href="images/faviconimag.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="fixed w-full flex justify-between items-center z-50 px-[100px] py-[18px]  ">
+        <a href="#" class="text-[32px] italic font-medium text-[c7a87b]" >TIMELESS-AURA</a>
+        <i class="fa-solid fa-bars text-[30px] hover:text-slate-200 hidden"></i>
+        <ul class="flex">
+            <li><a class="py-[8px] px-[22px] text-[c7a87b] font-light text-[20px] italic hover:bg-[#8a6148] rounded-md" href="#Home">HOME</a></li>
+            <li><a class="py-[8px] px-[22px] text-[c7a87b] font-light text-[20px] italic hover:bg-[#8a6148] rounded-md" href="#About">ABOUT</a></li>
+            <li><a class="py-[8px] px-[22px] text-[c7a87b] font-light text-[20px] italic hover:bg-[#8a6148] rounded-md" href="#Watches">WATCHES</a></li>
+            <li><a class="py-[8px] px-[22px] text-[c7a87b] font-light text-[20px] italic hover:bg-[#8a6148] rounded-md" href="#Customers">CUSTOMERS</a></li>
+        </ul>
+        <div class="text-[30px] hover:text-[#8a6148]">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
 
-    <div class="hero">
-        <img src="images/61IohGdBMtL._AC_SX522_-Photoroom.png" alt="Image 1" class="hero-image" id="image1">
-        <img src="images/71gYWZ1VtAL._AC_SX522_-Photoroom.png" alt="Image 2" class="hero-image" id="image2" style="display: none;">
-      </div>  
-
-<script src="jscript.js"></script>          
+    <section id="Home" class="py-[100px] px-[100px] w-full min-h-screen grid items-center gap-6">
+        <div class="">
+            <h1 class="uppercase text-[40px] tracking-widest text-black font-medium italic">Where Every Moment is a Masterpiece</h1><br>
+            <p  class="uppercase text-[15px] tracking-widest text-[#c7a87b] mt-[8px] mb-[23px] mr-[150px] italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos iste voluptatum provident error delectus eius dolorum qui fugit perspiciatis? Et corrupti asperiores vitae adipisci pariatur tempora nesciunt dicta soluta modi?</p><br>
+            <a href="#" class="btn text-[18px] py-[10px] px-[40px] hover:text-black rounded-md border-white hover:bg-[#8a6148] shadow-black font-medium italic bg-black text-[#8a6148]">Shop Now</a>
+        </div>
+        <div class="hero inline-block pt-[20px] pl-[100px] ml-[80px] ">
+            <img src="images/61IohGdBMtL._AC_SX522_-Photoroom.png" alt="Image 1" class="hero-image" id="image1">
+            <img src="images/71gYWZ1VtAL._AC_SX522_-Photoroom.png" alt="Image 2" class="hero-image" id="image2" style="display: none;">
+          </div>      
+    </section>
+<script src="main.js"></script>          
 </body>
 </html>
