@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 *{
     padding: 0;
@@ -12,10 +12,19 @@
 }
 body{
     background: linear-gradient(135deg, #8a6148, #1C1C1C);
-
 }
 #Home{
     grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+}
+#About{
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+}
+.man1v{
+    box-shadow: 0 10px 20px rgba(28, 28, 28, 0.8), 
+                0 6px 6px rgba(138, 97, 72, 0.6);
+}
+.watch-container{
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
 }
 /*coooooooooooooooooooooooooooooooooooooooooooooo
 .hero {
