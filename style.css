@@ -26,6 +26,13 @@ body{
 .watch-container{
     grid-template-columns: repeat(auto-fit,minmax(280px,auto));
 }
+.custo-contain{
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+}
+#Contact{
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+
+}
 /*coooooooooooooooooooooooooooooooooooooooooooooo
 .hero {
     display: grid;
