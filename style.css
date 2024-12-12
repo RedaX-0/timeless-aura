@@ -11,7 +11,7 @@
     text-decoration: none;
 }
 body{
-    background: linear-gradient(135deg, #8a6148, #1C1C1C);
+    background: linear-gradient(100deg, #8e644a, #101010);
 }
 #Home{
     grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
