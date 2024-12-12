@@ -1,3 +1,27 @@
+window.onscroll = function() {
+  let navbar = document.getElementById("navbar");
+  let links = document.querySelectorAll("header a");
+
+  // Apply transition when scrolling
+  if (window.scrollY > 50) {
+    navbar.classList.add("bg-zinc-900");
+    navbar.classList.add("shadow-lg");  // Optional: Add shadow for extra effect
+
+    links.forEach(link => {
+      link.classList.add("text-[#c7a87b]", "transition-colors", "duration-1000", "ease-in-out");
+    });
+  } else {
+    navbar.classList.remove("bg-zinc-900");
+    navbar.classList.remove("shadow-lg");  // Optional: Remove shadow
+
+    links.forEach(link => {
+      link.classList.remove("text-[#c7a87b]");
+    });
+  }
+};
+
+
+
 let currentIndex = 0;
 const images = document.querySelectorAll('.hero-image');
 
