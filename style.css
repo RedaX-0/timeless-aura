@@ -33,6 +33,45 @@ body{
     grid-template-columns: repeat(auto-fit,minmax(240px,auto));
 
 }
+/* Common fade-in styles */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-out, transform 2s ease-out;
+}
+  
+/* From left */
+.fade-in-left {
+    transform: translateX(-50px); /* Start slightly off-screen to the left */
+}
+  
+.fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0); /* Move into place */
+}
+  
+/* From right */
+.fade-in-right {
+    transform: translateX(50px); /* Start slightly off-screen to the right */
+}
+  
+.fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0); /* Move into place */
+}
+/* Initial state for fade-in from the bottom */
+.fade-in-bottom {
+    opacity: 0;
+    transform: translateY(50px); /* Move the element below its normal position */
+    transition: opacity 1.5s ease-out, transform 2s ease-out; /* Smooth transition */
+}
+  
+/* Visible state */
+.fade-in-bottom.visible {
+    opacity: 1;
+    transform: translateY(0); /* Element moves into its original position */
+}
+  
+   
 /*coooooooooooooooooooooooooooooooooooooooooooooo
 .hero {
     display: grid;
