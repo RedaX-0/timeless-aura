@@ -13,26 +13,34 @@
 </head>
 
 <body>
-    <header id="navbar" class="fixed w-full flex justify-between items-center z-50 px-[100px] py-[18px] transition-all duration-1000 ease-in-out">
-        <a href="#" class="logo text-[32px] italic font-[AlexBrush] text-[c7a87b]" >TIMELESS-AURA</a>
-        <i class="fa-solid fa-bars text-[30px] hover:text-slate-200 hidden"></i>
-        <ul class="flex">
-            <li><a class="py-[8px] px-[22px] text-[c7a87b] font-light font-[AlexBrush] text-[20px] italic hover:bg-[#8a6148] rounded-md" href="#Home">HOME</a></li>
-            <li><a class="py-[8px] px-[22px] text-[c7a87b] font-light font-[AlexBrush] text-[20px] italic hover:bg-[#8a6148] rounded-md" href="#About">ABOUT</a></li>
-            <li><a class="py-[8px] px-[22px] text-[c7a87b] font-light font-[AlexBrush] text-[20px] italic hover:bg-[#8a6148] rounded-md" href="#Watches">WATCHES</a></li>
-            <li><a class="py-[8px] px-[22px] text-[c7a87b] font-light font-[AlexBrush] text-[20px] italic hover:bg-[#8a6148] rounded-md" href="#Customers">CUSTOMERS</a></li>
-           <!--<li><a class="py-[8px] px-[22px] text-[c7a87b] font-light font-[AlexBrush] text-[20px] italic hover:bg-[#8a6148] rounded-md" href="#Contact">CONTACT</a></li>-->
+    <header id="navbar" class="fixed w-full flex justify-between items-center z-50 px-[20px] lg:px-[100px] py-[18px] transition-all duration-1000 ease-in-out">
+        <!-- Logo with default color, will change on scroll -->
+        <a href="#" class="logo text-[32px] italic font-[AlexBrush] text-black transition-all duration-1000 ease-in-out">TIMELESS-AURA</a>
+        
+        <!-- Navbar links -->
+        <ul id="nav-links" class="hidden lg:flex flex-col lg:flex-row absolute lg:static top-[80px] right-0 w-full lg:w-auto lg:bg-transparent lg:space-x-4">
+            <li><a class="block lg:inline-block py-[8px] px-[22px] text-black font-light font-[AlexBrush] text-[20px] italic hover:text-[#c7a87b] hover:bg-[#212121] transition-colors duration-300 rounded-md" href="#Home">HOME</a></li>
+            <li><a class="block lg:inline-block py-[8px] px-[22px] text-black font-light font-[AlexBrush] text-[20px] italic hover:text-[#c7a87b] hover:bg-[#212121] transition-colors duration-300 rounded-md" href="#About">ABOUT</a></li>
+            <li><a class="block lg:inline-block py-[8px] px-[22px] text-black font-light font-[AlexBrush] text-[20px] italic hover:text-[#c7a87b] hover:bg-[#212121] transition-colors duration-300 rounded-md" href="#Watches">WATCHES</a></li>
+            <li><a class="block lg:inline-block py-[8px] px-[22px] text-black font-light font-[AlexBrush] text-[20px] italic hover:text-[#c7a87b] hover:bg-[#212121] transition-colors duration-300 rounded-md" href="#Customers">CUSTOMERS</a></li>
         </ul>
-        <div class="text-[30px] hover:text-[#8a6148]">
+        
+        <!-- Burger Icon for mobile view -->
+        <i id="burger" class="fa-solid fa-bars text-[30px] lg:hidden hover:text-[#c7a87b] cursor-pointer"></i>
+    
+        <!-- Cart Icon -->
+        <div class="text-[30px] hover:text-[#c7a87b]">
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
     </header>
+    
+    
 
     <section id="Home" class="py-[75px] px-[100px] w-full min-h-screen grid items-center gap-6">
         <div class="fade-in fade-in-left">
             <h1 class="font-[AlexBrush] uppercase text-[40px] tracking-widest text-black font-medium italic">Where Every Moment is a Masterpiece</h1><br>
             <p  class="font-[AlexBrush] uppercase text-[20px] tracking-widest text-[#c7a87b] mt-[8px] mb-[23px] mr-[150px] italic">Your satisfaction is our top priority. We are here to help you find the perfect watch that matches your personality.</p><br>
-            <a href="#Watches" class="btn font-[AlexBrush] text-[18px] py-[10px] px-[40px] hover:text-black rounded-md border-white hover:bg-[#8a6148] shadow-black font-medium italic bg-black text-[#8a6148]">Shop Now</a>
+            <a href="#Watches" class="btn font-[AlexBrush] text-[18px] py-[10px] px-[40px] hover:text-black rounded-md border-white hover:bg-[#c7a87b] shadow-black font-medium italic bg-black text-[#8a6148]">Shop Now</a>
         </div>
         <div class="hero fade-in fade-in-right pt-[20px] pl-[100px] ml-[80px]">
             <img src="images/61IohGdBMtL._AC_SX522_-Photoroom.png" alt="Image 1" class="hero-image" id="image1">

@@ -1,24 +1,35 @@
 window.onscroll = function() {
   let navbar = document.getElementById("navbar");
-  let links = document.querySelectorAll("header a");
+  let logo = document.querySelector(".logo");
+  let links = document.querySelectorAll("header #nav-links a");  // Target all <a> inside nav-links
 
-  // Apply transition when scrolling
+  // Apply background color and text color on scroll
   if (window.scrollY > 50) {
-    navbar.classList.add("bg-zinc-900");
-    navbar.classList.add("shadow-lg");  // Optional: Add shadow for extra effect
-
+    navbar.classList.add("bg-zinc-900");  // Add background color to navbar
+    logo.classList.add("text-[#b5986e]");  // Change logo text color to #c7a87b
     links.forEach(link => {
-      link.classList.add("text-[#c7a87b]", "transition-colors", "duration-1000", "ease-in-out");
+      link.classList.add("text-[#b5986e]");  // Change navbar links text color to #c7a87b
     });
   } else {
-    navbar.classList.remove("bg-zinc-900");
-    navbar.classList.remove("shadow-lg");  // Optional: Remove shadow
-
+    navbar.classList.remove("bg-zinc-900");  // Reset navbar background color
+    logo.classList.remove("text-[#b5986e]");  // Reset logo text color
     links.forEach(link => {
-      link.classList.remove("text-[#c7a87b]");
+      link.classList.remove("text-[#b5986e]");  // Reset navbar links text color
     });
   }
 };
+
+
+
+// Get the burger icon and the nav-links container
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('nav-links');
+
+// Add an event listener to toggle the visibility of nav links
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('hidden');
+});
+
 
 
 
@@ -32,6 +43,9 @@ function changeImage() {
 }
 
 setInterval(changeImage, 3000); // Change image every 3 seconds
+
+
+
 
 // Select all elements with the fade-in class
 const fadeInElements = document.querySelectorAll('.fade-in');
@@ -48,6 +62,9 @@ const fadeInObserver = new IntersectionObserver((entries, observer) => {
 
 // Observe each fade-in element
 fadeInElements.forEach(element => fadeInObserver.observe(element));
+
+
+
 
 // Select the container that has the fade-in-bottom class
 const fadeInBottomElements = document.querySelectorAll('.fade-in-bottom');
