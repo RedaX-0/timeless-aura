@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body{
+    background: linear-gradient(to right, #212121 0%, #8e644a 50%, #212121 100%);
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.1);
+}
