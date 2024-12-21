@@ -22,3 +22,10 @@ thumbnails.forEach((thumbnail) => {
     });
 });
 
+function toggleHeartColor() {
+    const heartIcon = document.getElementById('heart-icon');
+    // Toggle the red color on the heart
+    heartIcon.classList.toggle('text-red-600');
+    // Optionally add a smooth transition
+    heartIcon.classList.toggle('transition-all');
+}
